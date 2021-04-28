@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+let op = 1;
 
 export default class ColorBox extends Component {
 
@@ -9,12 +10,17 @@ export default class ColorBox extends Component {
   }
 
   render() {
-    return (
-      <div className="color-box" style={{opacity: null /*replace null with the value*/}}>
-        {/* your conditional code here! */}
+  while (op > .1) {
+    if (op > .2) { 
+      return (
+      <div className="color-box" style={{opacity: op /*replace null with the value*/}}>
+      {op = op - .1}
       </div>
-    )
-  }
-
+      )}
+     else {
+       return (null)
+       op = op - .1
+     }
+     }
 }
-
+}
